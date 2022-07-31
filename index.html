@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+
+<body> 
+
+    <ul id="contacts">
+        <h1>All Contacts</h1>
+    </ul>
+
+
+    <div id="contact-panel" class="panel">
+        <form id="form" action="#">
+            <h1 class="second-heading">Add a new contact</h1>
+            <div class="add-contact">
+                <label for="fname"> FIRST NAME
+                    <input type="text" name="first name" id="fname" placeholder="John" />
+                </label>
+
+                <br>
+                <label for="lname"> LAST NAME
+                    <input type="text" name="last name" id="lname" placeholder="Smith" />
+                </label>
+                <br>
+                <label for="email"> E-MAIL
+                    <input type="text" name="email" id="email" placeholder="john@example.com" />
+                </label>
+                <br>
+                <label for="city"> CITY
+                    <input type="text" name="city" id="city" placeholder="Ottawa" />
+                </label>
+                <br>
+                <label for="province"> PROVINCE
+                    <input type="text" name="province" id="province" placeholder="Ontario" />
+                </label>
+            </div>
+            <div class="submit-button">
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+    </div>
+    <div id="show-panel" class="panel">
+
+    </div>
+
+    <div id="modal" class="modal">
+        <button class='closeBtn' id='closeBtn' >x</button>
+        <h1>Contact Details</h1>
+        <h2>First Name:</h2>
+        <p id="fnamelbl" ></p>
+        <h2>Last Name:</h2>
+        <p id="lnamelbl" ></p>
+        <h2>E-mail:</h2>
+        <p id="emaillbl"  ></p>
+        <h2>City:</h2>
+        <p id="citylbl"  ></p>
+        <h2>Province:</h2>
+        <p id="provincelbl"></p>
+
+        <!-- <button class='closeBtn' id='closeBtn'>x</button> -->
+    </div>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+
+    
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
